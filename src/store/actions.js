@@ -80,11 +80,11 @@ export const ACTION_FETCH_API = (endpoint, country, idLeague, season, idTeam) =>
       };
 
       const actions = {
-        country: SET_COUNTRIES,
-        leaguesOfCountry: SET_LEAGUES,
-        teamsOfLeagueAndSeason: SET_TEAMS,
-        players: SET_PLAYERS,
-        teamStatistic: SET_TEAM_STATISTICS,
+        country: ACTION_SET_COUNTRIES,
+        leaguesOfCountry: ACTION_SET_LEAGUES,
+        teamsOfLeagueAndSeason: ACTION_SET_TEAMS,
+        players: ACTION_SET_PLAYERS,
+        teamStatistic: ACTION_SET_TEAM_STATISTICS,
       };
 
       const response = await fetch(`${BASE_URL}${endpoints[endpoint]}`, {
