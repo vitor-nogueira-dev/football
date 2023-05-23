@@ -1,3 +1,4 @@
+import { AgePlayer, CardContainer, Img, NamePlayer, Nationality } from "./styles";
 
 const CardPlayer = (data) => {
   return (
