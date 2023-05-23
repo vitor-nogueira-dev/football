@@ -18,6 +18,11 @@ const clubReducer = (state = initialState, action) => {
         ...state,
         countries: action.payload,
       };
+    case SET_LEAGUES:
+      return {
+        ...state,
+        leagues: action.payload,
+      };
     default:
       return state;
   }
