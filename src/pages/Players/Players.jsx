@@ -7,6 +7,7 @@ import { Games } from "../../components/Games/Games";
 import ChartComponent from "../../components/Chart/Chart";
 import Title from "../../components/Title/Title";
 import { Container, ContentInfos } from "./styles";
+import CardPlayer from "../../components/Players/Players";
 
 export const Players = () => {
   const { id: idTeam } = useParams();
