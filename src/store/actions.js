@@ -65,7 +65,7 @@ export const ACTION_SET_SEASON = (season) => {
   };
 };
 
-export const FETCH_API = (endpoint, country, idLeague, season, idTeam) => {
+export const ACTION_FETCH_API = (endpoint, country, idLeague, season, idTeam) => {
   return async (dispatch, getState) => {
     try {
       const API_KEY = getState().API_KEY;
@@ -94,7 +94,7 @@ export const FETCH_API = (endpoint, country, idLeague, season, idTeam) => {
           'x-rapidapi-key': API_KEY,
         },
       });
-      
+
       const data = await response.json();
       dispatch(actions[endpoint](data.response));
     } catch (error) {
