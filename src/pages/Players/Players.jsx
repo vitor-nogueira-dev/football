@@ -9,6 +9,7 @@ import { ACTION_FETCH_API } from "../../store/actions";
 import { Container, ContentInfos } from "./styles";
 import CardPlayer from "../../components/Players/Players";
 import { Games } from "../../components/Games/Games";
+import ChartComponent from "../../components/Chart/ChartComponent";
 
 export const Players = () => {
   const { id: idTeam } = useParams();
@@ -34,7 +35,7 @@ export const Players = () => {
       <Container>
         <ContentInfos>
           {teamStatistic?.fixtures && <Games />}
-          {/* <ChartComponent /> */}
+          <ChartComponent />
         </ContentInfos>
         {players?.map((player) => {
           return <CardPlayer key={player.player.id} {...player} />;
