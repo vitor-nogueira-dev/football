@@ -43,7 +43,11 @@ const clubReducer = (state = initialState, action) => {
         ...state,
         idLeague: action.payload,
       };
-   
+    case SET_SEASON:
+      return {
+        ...state,
+        season: action.payload,
+      };
     default:
       return state;
   }
