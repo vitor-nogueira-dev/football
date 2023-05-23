@@ -33,6 +33,11 @@ const clubReducer = (state = initialState, action) => {
         ...state,
         players: action.payload,
       };
+    case SET_TEAM_STATISTICS:
+      return {
+        ...state,
+        teamStatistic: action.payload,
+      };
     
     default:
       return state;
