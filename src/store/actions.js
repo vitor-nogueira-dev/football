@@ -1,4 +1,4 @@
-import { SET_API_KEY, SET_COUNTRIES, SET_ID_LEAGUE, SET_LEAGUES, SET_PLAYERS, SET_TEAMS, SET_TEAM_STATISTICS } from '../utils/constantes';
+import { SET_API_KEY, SET_COUNTRIES, SET_ID_LEAGUE, SET_LEAGUES, SET_PLAYERS, SET_SEASON, SET_TEAMS, SET_TEAM_STATISTICS } from '../utils/constantes';
 
 export const ACTION_SET_API_KEY = (API_KEY) => {
   return {
@@ -46,5 +46,12 @@ export const ACTION_SET_ID_LEAGUE = (idLeague) => {
   return {
     type: SET_ID_LEAGUE,
     payload: idLeague,
+  };
+}
+
+export const ACTION_SET_SEASON = (season) => {
+  return {
+    type: SET_SEASON,
+    payload: season,
   };
 }
