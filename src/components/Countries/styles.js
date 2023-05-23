@@ -25,6 +25,7 @@ const Container = styled.div`
 `;
 
 const ImgCountry = styled.img`
+  border-radius: 10px;
   max-width: 180px;
   src: url(${(props) => props.src});
 
