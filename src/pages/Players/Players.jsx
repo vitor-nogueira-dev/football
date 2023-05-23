@@ -6,6 +6,7 @@ import { ACTION_FETCH_API } from "../../store/actions";
 import { Games } from "../../components/Games/Games";
 import ChartComponent from "../../components/Chart/Chart";
 import Title from "../../components/Title/Title";
+import { Container, ContentInfos } from "./styles";
 
 export const Players = () => {
   const { id: idTeam } = useParams();
