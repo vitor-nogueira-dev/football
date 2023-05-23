@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useCallback, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { ACTION_FETCH_API } from "../../store/actions";
-import Container from "./styles";
+// import Container from "./styles";
 import CardLeagues from "../../components/Leagues/CardLeague";
+import { Container } from "../../styles/styles.global";
 
 const Leagues = () => {
   const dispatch = useDispatch()

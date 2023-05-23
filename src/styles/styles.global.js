@@ -35,6 +35,8 @@ const TableHeader = styled.th`
 
 const TableCell = styled.td`
   padding: 5px;
+  text-align: center;
+
 `;
 
 const LogoCell = styled.td`
@@ -66,4 +68,14 @@ const Button = styled.button`
   }
 `;
 
-export { Table, TableRow, TableHeader, TableCell, LogoCell, LogoImage, Button };
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  padding: ${(props) => (props.padding || '20px')};
+`
+
+export { Table, TableRow, TableHeader, TableCell, LogoCell, LogoImage, Button, Container };
