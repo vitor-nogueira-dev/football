@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { CardCountry } from "../../components/Countries/CardCountry";
 import Container from "./styles";
 
-export const Countries = () => {
+const Countries = () => {
   const countries = useSelector((state) => state.countries);
 
   return (
@@ -17,3 +17,5 @@ export const Countries = () => {
     </>
   )
 }
+
+export default Countries;
