@@ -8,13 +8,14 @@ import { ACTION_FETCH_API } from "../../store/actions";
 // import Title from "../../components/Title/Title";
 import { Container, ContentInfos } from "./styles";
 import CardPlayer from "../../components/Players/Players";
+import { Games } from "../../components/Games/Games";
 
 export const Players = () => {
   const { id: idTeam } = useParams();
   const dispatch = useDispatch();
 
   const players = useSelector((state) => state.players);
-  // const teamStatistic = useSelector((state) => state.teamStatistic);
+  const teamStatistic = useSelector((state) => state.teamStatistic);
   const idLeague = useSelector((state) => state.idLeague);
   const season = useSelector((state) => state.season);
 
@@ -32,7 +33,7 @@ export const Players = () => {
       {/* <Title title="" /> */}
       <Container>
         <ContentInfos>
-          {/* {teamStatistic?.fixtures && <Games />} */}
+          {teamStatistic?.fixtures && <Games />}
           {/* <ChartComponent /> */}
         </ContentInfos>
         {players?.map((player) => {
