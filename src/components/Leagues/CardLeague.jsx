@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { SET_SEASON } from "../../store/actions";
+import { Button, LogoCell, LogoImage, Table, TableCell, TableHeader, TableRow } from "../../styles/styles.global";
 
 const CardLeagues = (data) => {
   const history = useHistory();
