@@ -13,6 +13,11 @@ const clubReducer = (state = initialState, action) => {
         ...state,
         API_KEY: action.payload,
       };
+    case SET_COUNTRIES:
+      return {
+        ...state,
+        countries: action.payload,
+      };
     default:
       return state;
   }
