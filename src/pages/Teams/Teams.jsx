@@ -2,7 +2,7 @@ import { useHistory, useParams } from "react-router-dom";
 import { ACTION_SET_ID_LEAGUE, ACTION_SET_TEAMS } from "../../store/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useCallback, useEffect } from "react";
-import { CardTeams } from "../../components/Teams/CardTeams";
+// import { CardTeams } from "../../components/Teams/CardTeams";
 
 import Title from "../../components/Title/Title";
 import Container from "./styles";
