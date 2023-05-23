@@ -1,3 +1,14 @@
+import {
+  SET_API_KEY,
+  SET_COUNTRIES,
+  SET_ID_LEAGUE,
+  SET_LEAGUES,
+  SET_PLAYERS,
+  SET_SEASON,
+  SET_TEAMS,
+  SET_TEAM_STATISTICS,
+} from '../utils/constantes';
+
 const initialState = {
   API_KEY: '',
   countries: [],
