@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { CardCountry } from "../../components/Countries/Countries";
+import { CardCountry } from "../../components/Countries/CardCountry";
 import Container from "./styles";
 
 export const Countries = () => {
