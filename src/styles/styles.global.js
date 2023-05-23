@@ -58,6 +58,7 @@ const Button = styled.button`
   padding: 0;
   box-shadow: rgba(213, 213, 213, 0.24) 0px 3px 8px;
   border-radius: 20px;
+  font-size: 1rem;
 
   @media (max-width: 768px) {
     width: 90%;
