@@ -20,7 +20,6 @@ const CardLeagues = (data) => {
   }
 
   return (
-
     <Button onClick={handleClick}>
       <Table>
         <tbody>
