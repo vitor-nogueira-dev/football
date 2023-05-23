@@ -5,6 +5,7 @@ import { useCallback, useEffect } from "react";
 import { CardTeams } from "../../components/Teams/CardTeams";
 
 import Title from "../../components/Title/Title";
+import Container from "./styles";
 
 export const Teams = () => {
   const { country, id: idLeague } = useParams();
