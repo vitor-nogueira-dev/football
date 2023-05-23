@@ -3,6 +3,7 @@ import { useCallback, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { fetchAPI } from "../../store/actions";
+import Container from "./styles";
 
 export const Leagues = () => {
   const dispatch = useDispatch()
