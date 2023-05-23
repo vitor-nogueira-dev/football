@@ -28,6 +28,12 @@ const clubReducer = (state = initialState, action) => {
         ...state,
         teams: action.payload,
       };
+    case SET_PLAYERS:
+      return {
+        ...state,
+        players: action.payload,
+      };
+    
     default:
       return state;
   }
