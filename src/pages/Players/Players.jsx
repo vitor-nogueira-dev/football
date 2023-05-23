@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { ACTION_FETCH_API } from "../../store/actions";
-import { Games } from "../../components/Games/Games";
-import ChartComponent from "../../components/Chart/Chart";
-import Title from "../../components/Title/Title";
+// import { Games } from "../../components/Games/Games";
+// import ChartComponent from "../../components/Chart/Chart";
+// import Title from "../../components/Title/Title";
 import { Container, ContentInfos } from "./styles";
 import CardPlayer from "../../components/Players/Players";
 
@@ -14,7 +14,7 @@ export const Players = () => {
   const dispatch = useDispatch();
 
   const players = useSelector((state) => state.players);
-  const teamStatistic = useSelector((state) => state.teamStatistic);
+  // const teamStatistic = useSelector((state) => state.teamStatistic);
   const idLeague = useSelector((state) => state.idLeague);
   const season = useSelector((state) => state.season);
 
@@ -29,11 +29,11 @@ export const Players = () => {
 
   return (
     <>
-      <Title title="" />
+      {/* <Title title="" /> */}
       <Container>
         <ContentInfos>
-          {teamStatistic?.fixtures && <Games />}
-          <ChartComponent />
+          {/* {teamStatistic?.fixtures && <Games />} */}
+          {/* <ChartComponent /> */}
         </ContentInfos>
         {players?.map((player) => {
           return <CardPlayer key={player.player.id} {...player} />;
