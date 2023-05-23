@@ -1,5 +1,5 @@
 import { Container, Forms, InputLogin, ButtonLogin } from './styles';
-import { ACTION_SET_API_KEY, fetchAPI } from '../../store/actions';
+import { ACTION_SET_API_KEY, ACTION_FETCH_API } from '../../store/actions';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
@@ -24,7 +24,7 @@ const Home = () => {
       return;
     }
     dispatch(ACTION_SET_API_KEY(apiKey));
-    dispatch(fetchAPI('country', '', '', '', ''));
+    dispatch(ACTION_FETCH_API('country', '', '', '', ''));
     history.push('/countries');
   };
 
