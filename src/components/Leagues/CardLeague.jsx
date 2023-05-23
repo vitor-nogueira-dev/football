@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { SET_SEASON } from "../../store/actions";
+import { ACTION_SET_SEASON } from "../../store/actions";
 import { Button, LogoCell, LogoImage, Table, TableCell, TableHeader, TableRow } from "../../styles/styles.global";
 
 const CardLeagues = (data) => {
@@ -15,7 +15,7 @@ const CardLeagues = (data) => {
       input = prompt("Digite um número de quatro dígitos:");
     }
     if (input === null) return;
-    dispatch(SET_SEASON(+input));
+    dispatch(ACTION_SET_SEASON(+input));
     history.push(`/teams/${id}`);
   }
 

@@ -2,17 +2,18 @@ import { useParams } from "react-router-dom";
 import { useCallback, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { fetchAPI } from "../../store/actions";
+import { ACTION_FETCH_API } from "../../store/actions";
 import Container from "./styles";
+import CardLeagues from "../../components/Leagues/CardLeague";
 
-export const Leagues = () => {
+const Leagues = () => {
   const dispatch = useDispatch()
   const leagues = useSelector((state) => state.leagues);
 
   const { country } = useParams();
 
   const fetchLeagues = useCallback(async () => {
-    dispatch(fetchAPI('leaguesOfCountry', country, '', '', ''));
+    dispatch(ACTION_FETCH_API('leaguesOfCountry', country, '', '', ''));
   }, [country, dispatch]);
 
   useEffect(() => {
@@ -32,3 +33,5 @@ export const Leagues = () => {
     </>
   )
 }
+
+export default Leagues;
