@@ -5,6 +5,7 @@ import { ACTION_FETCH_API } from "../../store/actions";
 // import Container from "./styles";
 import CardLeagues from "../../components/Leagues/CardLeague";
 import { Container } from "../../styles/styles.global";
+import Title from "../../components/Title/Title";
 
 const Leagues = () => {
   const dispatch = useDispatch()
@@ -22,7 +23,7 @@ const Leagues = () => {
 
   return (
     <>
-      {/* <Title title="Selecione a liga/copa para visualizar os times" /> */}
+      <Title title="Selecione a liga e/ou a copa para visualizar os times" />
       <Container>
         {leagues?.map((league) => {
           return <CardLeagues
