@@ -25,7 +25,7 @@ export const Games = () => {
           return (
             <div>
               <p>Formação mais utilizada na temporada: <TextLineUps>{acc.formation}</TextLineUps></p>
-              <p>Usada em <TextLineUps>{acc.played}</TextLineUps> jogos</p>
+              <p>Usada em <TextLineUps>{acc.played}</TextLineUps>{acc.played > 1 ? " jogos" : " jogo"}</p>
             </div>
           );
         })()}
