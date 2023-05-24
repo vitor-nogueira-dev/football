@@ -3,6 +3,7 @@ import { ACTION_SET_API_KEY, ACTION_FETCH_API } from '../../store/actions';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
 
   return (
     <Container>
+      <img src={logo}/>
       <Forms>
         <InputLogin
           type="text"

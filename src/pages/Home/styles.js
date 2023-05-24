@@ -5,6 +5,7 @@ const Container = styled.div`
   height: 549px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background: radial-gradient(
     50% 2900.76% at 50% 53.89%,
@@ -12,8 +13,17 @@ const Container = styled.div`
     #000000 100%
   );
   box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
-  border-radius: 100px 100px 100px 240px;
+  border-radius: 10px;
   border: 0.5px solid #ffbf00;
+  padding-bottom: 60px;
+
+  @media (max-width: 768px) {
+    width: 310px;
+    height: 420px;
+  }
+  > img {
+    width: 250px;
+  }
 `;
 
 const Forms = styled.form`
@@ -27,7 +37,7 @@ const InputLogin = styled.input`
   width: 280px;
   height: 48px;
   border: 0.5px solid #dddddd;
-  border-radius: 100px 100px 100px 240px;
+  border-radius: 10px;
   background-color: #222222;
   color: #dddddd;
   font-size: 15px;
@@ -42,6 +52,11 @@ const InputLogin = styled.input`
 
   &:focus-within {
     border: 1px solid #ffbf00;
+  }
+
+  @media (max-width: 768px) {
+    width: 240px;
+    height: 48px; 
   }
 `;
 
@@ -58,6 +73,11 @@ const ButtonLogin = styled.button`
   &:hover {
     background: linear-gradient(90deg, #ffdb58 0%, #ffbf00 100%);
     transition: all 0.6s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 35px; 
   }
 `;
 
