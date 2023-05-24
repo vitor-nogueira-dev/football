@@ -48,6 +48,7 @@ const LogoImage = styled.img`
   max-width: 100%;
   max-height: 50px;
   object-fit: contain;
+  border-radius: 5px;
 `;
 
 const Button = styled.button`
