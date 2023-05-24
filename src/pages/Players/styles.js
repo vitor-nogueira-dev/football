@@ -31,9 +31,9 @@ const ContentInfos = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     max-width: 100%;
-    padding: 20px;
+    padding: 10px 20px ;
   }
 `;
 
