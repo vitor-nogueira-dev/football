@@ -2,8 +2,7 @@ import { useHistory, useParams } from "react-router-dom";
 import { ACTION_FETCH_API, ACTION_SET_ID_LEAGUE } from "../../store/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useCallback, useEffect } from "react";
-// import { CardTeams } from "../../components/Teams/CardTeams";
-// import Title from "../../components/Title/Title";
+import Title from "../../components/Title/Title";
 import Container from "./styles";
 import CardTeams from "../../components/Teams/CardTeam";
 
@@ -32,7 +31,7 @@ export const Teams = () => {
   console.log(teams, "teams")
   return (
     <>
-      {/* <Title title="Selecione um time para visualizar a lista de jogadores e infos sobre a temporada" /> */}
+      <Title title="Selecione um time para visualizar a lista de jogadores e infos sobre a temporada" />
       <Container>
         {teams?.map((team) => {
           return <CardTeams key={team.team.id} {...team} />;
