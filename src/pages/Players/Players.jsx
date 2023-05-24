@@ -3,13 +3,11 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { ACTION_FETCH_API } from "../../store/actions";
-// import { Games } from "../../components/Games/Games";
-// import ChartComponent from "../../components/Chart/Chart";
-// import Title from "../../components/Title/Title";
 import { Container, ContentInfos } from "./styles";
 import CardPlayer from "../../components/Players/Players";
 import { Games } from "../../components/Games/Games";
 import ChartComponent from "../../components/Chart/ChartComponent";
+import Title from "../../components/Title/Title";
 
 export const Players = () => {
   const { id: idTeam } = useParams();
@@ -31,7 +29,7 @@ export const Players = () => {
 
   return (
     <>
-      {/* <Title title="" /> */}
+      <Title title="Jogadores e infos sobre a temporada" />
       <Container>
         <ContentInfos>
           {teamStatistic?.fixtures && <Games />}
