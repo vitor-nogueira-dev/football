@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
 import { Table } from "react-bootstrap";
 import { Container, ContentLineUps, TableData, TextLineUps, TableHeader } from "./styles";
-// import Title from "../Title/Title";
 
 export const Games = () => {
   const teamStatistic = useSelector((state) => state.teamStatistic);
@@ -14,9 +13,7 @@ export const Games = () => {
 
   return (
     <Container>
-      {/* <Title title="Jogos" fontSize="1.5rem" padding="10px" /> */}
       <ContentLineUps>
-        {/* <TextLineUps>Formação mais utilizada na temporada</TextLineUps> */}
         {lineups?.length !== 0 && (() => {
           const acc = lineups.reduce((acc, data) => {
             return acc.played > data.played ? acc : data;

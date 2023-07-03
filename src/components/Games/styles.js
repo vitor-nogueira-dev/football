@@ -39,7 +39,6 @@ const TableData = styled.td`
 
 const ContentLineUps = styled.div`
   width: 80%;
-  /* border: 2px solid green; */
   color: #ccc;
   display: flex;
   justify-content: space-evenly;

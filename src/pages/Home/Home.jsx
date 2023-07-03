@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
-
 const Home = () => {
   const [apiKey, setApiKey] = useState('');
   const dispatch = useDispatch();
@@ -24,9 +23,15 @@ const Home = () => {
       setApiKey('');
       return;
     }
-    dispatch(ACTION_SET_API_KEY(apiKey));
-    dispatch(ACTION_FETCH_API('country', '', '', '', ''));
-    history.push('/countries');
+
+    try {
+      dispatch(ACTION_SET_API_KEY(apiKey));
+      dispatch(ACTION_FETCH_API('country', '', '', '', ''));
+      history.push('/countries');
+    } catch (error) {
+      console.error(error.message)
+      history.push('/');
+    }
   };
 
   const handleChange = ({ target }) => {
@@ -36,7 +41,7 @@ const Home = () => {
 
   return (
     <Container>
-      <img src={logo}/>
+      <img src={logo} />
       <Forms>
         <InputLogin
           type="text"

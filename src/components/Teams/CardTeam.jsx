@@ -10,7 +10,6 @@ const CardTeams = (data) => {
             <TableRow>
               <TableHeader>Nome</TableHeader>
               <TableHeader>País</TableHeader>
-              {/* <TableHeader>Fundação</TableHeader> */}
               {data.team.founded && <TableHeader>Fundação</TableHeader>}
               <TableHeader>Logo</TableHeader>
             </TableRow>
