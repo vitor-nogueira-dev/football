@@ -1,3 +1,4 @@
+
 import {
   SET_API_KEY,
   SET_COUNTRIES,
@@ -65,7 +66,13 @@ export const ACTION_SET_SEASON = (season) => {
   };
 };
 
-export const ACTION_FETCH_API = (endpoint, country, idLeague, season, idTeam) => {
+export const ACTION_FETCH_API = (
+  endpoint,
+  country,
+  idLeague,
+  season,
+  idTeam
+) => {
   return async (dispatch, getState) => {
     try {
       const API_KEY = getState().API_KEY;
@@ -96,6 +103,9 @@ export const ACTION_FETCH_API = (endpoint, country, idLeague, season, idTeam) =>
       });
 
       const data = await response.json();
+      if (data.response.length === 0) {
+        throw new Error('Por favor, digite uma API-KEY válida!');
+      }
       dispatch(actions[endpoint](data.response));
     } catch (error) {
       console.error(error);
