@@ -51,7 +51,7 @@ npm install
 Linguagem de programação: ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)&nbsp; </br>
 Framework de desenvolvimento: ![React JS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp; </br>
 Estilização CSS in JS: ![Styled Components](https://img.shields.io/badge/styled_components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)&nbsp; </br>
-Folha de estilo: ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg)&nbsp; </br>
+Folha de estilo: ![CSS](https://img.shields.io/badge/CSS3-DB7093?style=for-the-badge&logo=css3&logoColor=white)&nbsp; </br>
 Gerencimento de estado: ![Redux](https://img.shields.io/badge/Redux-00000F?style=for-the-badge&logo=redux&logoColor=white)&nbsp; </br>
 Ferramenta de análise de código estática: ![ESLint](https://img.shields.io/badge/ESLint-00000F?style=for-the-badge&logo=eslint&logoColor=white)&nbsp; </br>
 Ferramenta de formatação de código: ![Prettier](https://img.shields.io/badge/Prettier-00000F?style=for-the-badge&logo=prettier&logoColor=white)&nbsp; </br>
