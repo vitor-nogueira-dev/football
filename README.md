@@ -6,7 +6,7 @@
 <details>
 <summary>📝 Proposta</summary>
 
-O projeto "Meu Time" é uma aplicação que permite visualizar informações detalhadas de um time de futebol com base no país, liga, copa e temporada selecionados. Utilizando a [API Football](https://www.api-football.com/), o projeto realiza consultas para obter os dados necessários.
+O projeto "Meu Time" é uma aplicação que permite visualizar informações detalhadas de um time de futebol e seus jogadores com base no país, liga, copa e temporada selecionados. Utilizando a [API Football](https://www.api-football.com/), o projeto realiza consultas para obter os dados necessários.
 
 </details>
 
